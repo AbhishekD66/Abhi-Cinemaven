@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>User Profile</title>
-<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -15,7 +15,10 @@
     </header>
 
     <div class="profile-info">
-      <img src="user-addy.png" alt="User Avatar">
+      <div class="profile-image-container">
+        <img id="profile-image" src="https://w7.pngwing.com/pngs/994/156/png-transparent-red-skull-captain-america-lernaean-hydra-logo-cdr-marvel-avengers-assemble-heroes-text.png" alt="User Avatar">
+        <button id="change-image-btn" class="edit-btn">Select-Logo</button>
+      </div>
       <h2 id="username">User-Name</h2>
       <p>Email: <span id="email">addy123@gmail.com</span></p>
       <p>Location: <span id="location">New York, USA</span> <button id="editLocationBtn" class="edit-btn">Edit</button>
@@ -23,15 +26,27 @@
       <button id="editProfileBtn" class="edit-profile-btn">Edit Profile</button>
     </div>
 
-
-    <!-- this is change in freature 1 branch -->
-
     <footer>
-      
       <marquee><p>&copy; 2024 CINEMAVEN. All rights reserved.</p></marquee>
     </footer>
 
+    <!-- Image Selection Modal -->
+    <div id="imageSelectionModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Select Profile Image</h2>
+        <div class="image-options">
+          <img src="https://cdn.imgbin.com/3/2/20/imgbin-phil-coulson-marvel-cinematic-universe-s-h-i-e-l-d-hydra-marvel-comics-marvel-shield-aETYCiBZhEHxgfrEjb3dpbnaJ.jpg" alt="Image 1" class="image-option">
+          <img src="img1.png" alt="Image 2" class="image-option">
+          <img src="https://i.pinimg.com/originals/96/28/ed/9628ed0b58c82079c5016f8ef91c0b48.jpg" alt="Image 3" class="image-option">
+          <img src="img3.png" alt="Image 4" class="image-option">
+          <img src="https://i.etsystatic.com/9715836/r/il/6ef88e/1438113134/il_fullxfull.1438113134_qfdl.jpg" alt="Image 5" class="image-option">
+        </div>
+      </div>
+    </div>
+
    <script src="script.js"></script>
+  </div>
 </body>
 
 </html>
